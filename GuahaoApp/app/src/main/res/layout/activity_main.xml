@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+       >
+        <android.support.v7.widget.Toolbar
+           style="@style/ActionbarStyle"
+        >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="预约助手"
+                android:textSize="25sp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="9"
+                />
+
+
+            <ImageView
+                android:clickable="true"
+                android:id="@+id/main_btn_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_edit"
+                android:layout_weight="1"
+                />
+            </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <Button
+        android:id="@+id/main_btn_start"
+        android:layout_gravity="center"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:text="开始预约"
+        android:background="@drawable/btn_blue_able"
+        android:layout_marginTop="50dp"
+
+        />
+    <Button
+        android:id="@+id/btn_main_cancel"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:text="结束预约"
+        android:background="@drawable/btn_gray_enable"
+        android:clickable="false"
+        />
+
+</LinearLayout>

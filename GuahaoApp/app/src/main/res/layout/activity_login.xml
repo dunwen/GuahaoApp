@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo"
+        android:layout_marginTop="20dp"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/login_pwd"
+            />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:hint="用户名"
+            android:id="@+id/login_et_username" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/login_user"
+            />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:id="@+id/login_et_pwd"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        >
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:hint="验证码"
+            android:layout_weight="3"
+            android:id="@+id/login_et_VFcode"
+            />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="7"
+            android:src="@drawable/iconfont_loading"
+            android:id="@+id/login_iv_VFcode"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名密码错误"
+        android:layout_marginLeft="40dp"
+        android:textSize="20sp"
+        android:textColor="#ff0000"
+        android:id="@+id/login_tv_errorMsg"
+        android:visibility="invisible"
+        />
+
+
+    <Button
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_blue_background"
+        android:text="登录"
+
+        android:id="@+id/login_btn_login"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#bcbcbc"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:text="预约助手"
+        android:layout_marginTop="120dp"
+        />
+
+    
+</LinearLayout>
